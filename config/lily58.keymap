@@ -9,6 +9,28 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Left-Word-Higlight {
+            bindings = <&kp LA(LS(LEFT))>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        Select-Next-Tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        Select-Prev-Tab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
