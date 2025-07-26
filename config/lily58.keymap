@@ -20,7 +20,7 @@
 
         Quick-Switcher {
             bindings = <&kp LG(TAB)>;
-            key-positions = <28 27>;
+            key-positions = <16 15>;
             layers = <0>;
         };
 
