@@ -14,7 +14,7 @@
 
         Left-Word-Higlight {
             bindings = <&kp LA(LS(LEFT))>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
@@ -22,6 +22,11 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <28 27>;
             layers = <0>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <19 20>;
         };
     };
 
