@@ -14,13 +14,13 @@
 
         Left-Word-Higlight {
             bindings = <&kp LA(LS(LEFT))>;
-            key-positions = <21 20>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
         Quick-Switcher {
             bindings = <&kp LG(TAB)>;
-            key-positions = <15 14>;
+            key-positions = <14 13>;
             layers = <0>;
         };
     };
