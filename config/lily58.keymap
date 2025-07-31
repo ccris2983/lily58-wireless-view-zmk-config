@@ -38,11 +38,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC  &kp N1      &kp N2       &kp N3            &kp N4     &kp N5                                         &kp N6         &kp N7     &kp N8             &kp N9       &kp N0      &kp GRAVE
-&kp Q    &kp W       &kp F        &kp P             &kp B      &kp TAB                                        &kp MINUS      &kp J      &kp L              &kp U        &kp Y       &kp SEMI
-&kp A    &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G      &kp LEFT_SHIFT                                 &kp SQT        &kp M      &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RALT I  &kp O
-&kp Z    &kp X       &kp C        &kp D             &kp V      &kp LEFT_CONTROL  &kp LBKT    &kp RBKT         &kp BACKSLASH  &kp K      &kp H              &kp COMMA    &kp DOT     &kp SLASH
-                                  &kp LGUI          &kp SPACE  &mo 1             &kp LALT    &kp RIGHT_SHIFT  &mo 2          &kp ENTER  &kp RGUI
+&kp ESC  &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                         &kp N6         &kp N7     &kp N8    &kp N9     &kp N0   &kp GRAVE
+&kp Q    &kp W   &kp F   &kp P     &kp B      &kp TAB                                        &kp MINUS      &kp J      &kp L     &kp U      &kp Y    &kp SEMI
+&kp A    &kp R   &kp S   &kp T     &kp G      &kp LEFT_SHIFT                                 &kp SQT        &kp M      &kp N     &kp E      &kp I    &kp O
+&kp Z    &kp X   &kp C   &kp D     &kp V      &kp LEFT_CONTROL  &kp LBKT    &kp RBKT         &kp BACKSLASH  &kp K      &kp H     &kp COMMA  &kp DOT  &kp SLASH
+                         &kp LGUI  &kp SPACE  &mo 1             &kp LALT    &kp RIGHT_SHIFT  &mo 2          &kp ENTER  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
