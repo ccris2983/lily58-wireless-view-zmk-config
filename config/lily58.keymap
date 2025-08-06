@@ -23,6 +23,18 @@
             key-positions = <14 13>;
             layers = <0>;
         };
+
+        Search {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <13 14>;
+            layers = <2>;
+        };
+
+        Right-Word-Highlight {
+            bindings = <&kp LA(LS(RIGHT))>;
+            key-positions = <21 22>;
+            layers = <3>;
+        };
     };
 
     keymap {
