@@ -110,7 +110,7 @@
             display-name = "Nav";
             bindings = <
 &trans    &trans         &trans        &trans       &trans         &trans                       &trans         &trans   &trans             &trans            &trans             &trans
-&kp END   &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &trans         &trans                       &kp LC(LG(Q))  &trans   &kp LG(W)          &kp LC(LS(TAB))   &kp LC(TAB)        &trans
+&trans    &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &trans         &trans                       &kp LC(LG(Q))  &trans   &kp LG(W)          &kp LC(LS(TAB))   &kp LC(TAB)        &trans
 &kp HOME  &kp LEFT       &kp DOWN      &kp RIGHT    &trans         &trans                       &trans         &kp TAB  &sk RSHFT          &sk LCTRL         &sk RIGHT_COMMAND  &sk RIGHT_ALT
 &trans    &trans         &trans        &trans       &trans         &trans     &trans    &trans  &trans         &trans   &kp LC(LG(ENTER))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans
                                        &trans       &kp BACKSPACE  &kp LC(D)  &trans    &trans  &trans         &trans   &trans
