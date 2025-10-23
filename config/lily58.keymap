@@ -60,7 +60,7 @@
 &kp Q    &kp W   &kp F   &kp P   &kp B      &kp TAB                                                  &kp MINUS  &kp J         &kp L   &kp U      &kp Y          &kp QUESTION
 &kp A    &kp R   &kp S   &kp T   &kp G      &kp LEFT_CONTROL                                         &kp SQT    &kp M         &kp N   &kp E      &kp I          &kp O
 &kp Z    &kp X   &kp C   &kp D   &kp V      &kp LALT          &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp SLASH  &kp K         &kp H   &kp COMMA  &kp SEMICOLON  &kp PERIOD
-                         &mo 1   &kp SPACE  &mo 2             &sk LEFT_COMMAND    &sk RIGHT_SHIFT    &mo 3      &kp ENTER     &tog 4
+                         &mo 1   &kp SPACE  &mo 2             &sk LEFT_COMMAND    &sk RIGHT_SHIFT    &mo 3      &kp ENTER     &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -76,11 +76,11 @@
 
             display-name = "Char 1";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans       &trans                &kp C_PREV             &kp C_PP       &kp C_NEXT
-&trans      &kp RG(C)         &kp LG(V)     &kp LG(X)     &trans        &trans                          &trans  &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
-&sk LALT    &sk LEFT_COMMAND  &sk LCTRL     &sk LSHFT     &kp TAB       &trans                          &trans  &kp DOLLAR   &kp LBKT              &kp RBKT               &kp SLASH      &kp AMPERSAND
-&trans      &trans            &trans        &trans        &trans        &trans        &trans    &trans  &trans  &kp CARET    &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE       &trans
-                                            &trans        &trans        &trans        &trans    &trans  &trans  &trans       &trans
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans       &trans                &kp C_PREV             &kp C_PP       &kp C_NEXT
+&trans      &kp LC(TAB)       &kp LC(LS(TAB))  &kp LG(W)     &trans        &trans                          &trans  &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &trans
+&sk LALT    &sk LEFT_COMMAND  &sk LCTRL        &sk LSHFT     &kp TAB       &trans                          &trans  &kp DOLLAR   &kp LBKT              &kp RBKT               &kp SLASH      &kp AMPERSAND
+&trans      &trans            &trans           &trans        &trans        &trans        &trans    &trans  &trans  &kp CARET    &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE       &trans
+                                               &trans        &trans        &mo 4         &trans    &trans  &trans  &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -89,11 +89,11 @@
 
         Special-Char-2 {
             bindings = <
-&trans    &trans            &trans            &trans          &trans   &trans                    &kp C_PREV  &kp C_PP         &kp C_NEXT     &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&trans    &kp RG(C)         &kp LG(V)         &kp LG(X)       &trans   &trans                    &trans      &trans           &kp SQT        &kp GRAVE   &kp HASH           &trans
-&sk LALT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp TAB  &trans                    &trans      &kp EXCLAMATION  &kp PERIOD     &kp MINUS   &kp EQUAL          &kp COMMA
-&trans    &trans            &trans            &trans          &trans   &trans  &trans    &trans  &trans      &trans           &kp SEMICOLON  &kp COLON   &kp ASTERISK       &trans
-                                              &trans          &trans   &trans  &trans    &trans  &trans      &trans           &trans
+&trans                &trans            &trans            &trans          &trans     &trans                    &kp C_PREV  &kp C_PP         &kp C_NEXT     &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&kp LS(LG(NUMBER_4))  &kp RG(C)         &kp LG(V)         &kp LG(X)       &kp ENTER  &trans                    &trans      &kp EXCLAMATION  &kp SQT        &kp GRAVE   &kp HASH           &trans
+&sk LALT              &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp TAB    &trans                    &trans      &kp DOLLAR       &kp PERIOD     &kp MINUS   &kp EQUAL          &kp COMMA
+&trans                &trans            &trans            &trans          &trans     &trans  &trans    &trans  &trans      &kp AT_SIGN      &kp SEMICOLON  &kp COLON   &kp ASTERISK       &trans
+                                                          &trans          &trans     &trans  &trans    &trans  &trans      &trans           &trans
             >;
 
             label = "Char 2";
@@ -109,11 +109,11 @@
 
             display-name = "Nav";
             bindings = <
-&trans    &trans         &trans        &trans       &trans         &trans                       &trans         &trans   &trans             &trans            &trans             &trans
-&trans    &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &trans         &trans                       &kp LC(LG(Q))  &trans   &kp LG(W)          &kp LC(LS(TAB))   &kp LC(TAB)        &trans
-&kp HOME  &kp LEFT       &kp DOWN      &kp RIGHT    &trans         &trans                       &trans         &kp TAB  &sk RSHFT          &sk LCTRL         &sk RIGHT_COMMAND  &sk RIGHT_ALT
-&trans    &trans         &trans        &trans       &trans         &trans     &trans    &trans  &trans         &trans   &kp LC(LG(ENTER))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans
-                                       &trans       &kp BACKSPACE  &kp LC(D)  &trans    &trans  &trans         &trans   &trans
+&trans  &trans         &trans        &trans       &trans         &trans                       &trans  &trans             &trans         &trans            &trans             &trans
+&trans  &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &kp END        &trans                       &trans  &trans             &kp LG(W)      &kp LC(LS(TAB))   &kp LC(TAB)        &trans
+&trans  &kp LEFT       &kp DOWN      &kp RIGHT    &kp HOME       &trans                       &trans  &kp TAB            &sk RSHFT      &sk LCTRL         &sk RIGHT_COMMAND  &sk RIGHT_ALT
+&trans  &trans         &trans        &trans       &trans         &trans     &trans    &trans  &trans  &kp LC(LG(ENTER))  &kp LC(LA(R))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans
+                                     &trans       &kp BACKSPACE  &kp LC(D)  &trans    &trans  &trans  &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
