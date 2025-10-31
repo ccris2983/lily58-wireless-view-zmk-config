@@ -48,6 +48,58 @@
         };
     };
 
+    behaviors {
+        HMRShiftR: HMRShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
+        };
+
+        HMRShiftL: HMRShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49 54 55 56 57 43>;
+        };
+
+        HMRL: HMRL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 3>;
+        };
+
+        HMRR: HMRR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 54 55 56 57>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +113,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC  &none  &none  &none  &none      &none                  &none  &none      &none  &none      &none          &none
-&kp Q    &kp W  &kp F  &kp P  &kp B      &none                  &none  &kp J      &kp L  &kp U      &kp Y          &kp ESCAPE
-&kp A    &kp R  &kp S  &kp T  &kp G      &none                  &none  &kp M      &kp N  &kp E      &kp I          &kp O
-&kp Z    &kp X  &kp C  &kp D  &kp V      &none  &none    &none  &none  &kp K      &kp H  &kp COMMA  &kp SEMICOLON  &kp PERIOD
-                       &mo 1  &kp SPACE  &mo 2  &none    &none  &mo 3  &kp ENTER  &mo 4
+&kp ESC            &none                 &none                 &none                    &none      &none                  &none  &none      &none                     &none                  &none                  &none
+&kp Q              &kp W                 &kp F                 &kp P                    &kp B      &none                  &none  &kp J      &kp L                     &kp U                  &kp Y                  &kp ESCAPE
+&HMRL RIGHT_ALT A  &HMRL LEFT_COMMAND R  &HMRL LEFT_CONTROL S  &HMRShiftL LEFT_SHIFT T  &kp G      &none                  &none  &kp M      &HMRShiftL RIGHT_SHIFT N  &HMRR RIGHT_CONTROL E  &HMRR RIGHT_COMMAND I  &HMRR RIGHT_ALT O
+&kp Z              &kp X                 &kp C                 &kp D                    &kp V      &none  &none    &none  &none  &kp K      &kp H                     &kp COMMA              &kp SEMICOLON          &kp PERIOD
+                                                               &mo 1                    &kp SPACE  &mo 2  &none    &none  &mo 3  &kp ENTER  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -81,11 +133,11 @@
 
             display-name = "Char 1";
             bindings = <
-&bt BT_CLR            &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans       &trans                &trans                 &trans         &trans
-&kp LS(LG(NUMBER_4))  &kp LC(LS(TAB))   &kp LC(TAB)   &kp LG(W)     &trans        &trans                          &trans  &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp GRAVE
-&sk LALT              &sk LEFT_COMMAND  &sk LCTRL     &sk LSHFT     &kp TAB       &trans                          &trans  &kp DOLLAR   &kp LBKT              &kp RBKT               &kp SLASH      &kp AMPERSAND
-&trans                &trans            &trans        &trans        &trans        &trans        &trans    &trans  &trans  &kp CARET    &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE       &trans
-                                                      &trans        &trans        &trans        &trans    &trans  &trans  &trans       &trans
+&trans                &trans           &trans       &trans     &trans  &trans                    &trans  &trans       &trans                &trans                 &trans         &trans
+&kp LS(LG(NUMBER_4))  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(W)  &trans  &trans                    &trans  &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp GRAVE
+&trans                &trans           &trans       &trans     &trans  &trans                    &trans  &kp DOLLAR   &kp LBKT              &kp RBKT               &kp SLASH      &kp AMPERSAND
+&trans                &trans           &trans       &trans     &trans  &trans  &trans    &trans  &trans  &kp CARET    &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE       &trans
+                                                    &trans     &trans  &trans  &trans    &trans  &trans  &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -94,11 +146,11 @@
 
         Special-Char-2 {
             bindings = <
-&trans    &trans            &trans            &trans          &trans     &trans                    &trans  &trans           &trans         &trans     &trans        &trans
-&trans    &kp RG(C)         &kp LG(V)         &kp LG(X)       &kp ENTER  &trans                    &trans  &kp EXCLAMATION  &kp SQT        &kp GRAVE  &kp HASH      &kp QUESTION
-&sk LALT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp TAB    &trans                    &trans  &kp DOLLAR       &kp PERIOD     &kp MINUS  &kp EQUAL     &kp COMMA
-&trans    &trans            &trans            &trans          &trans     &trans  &trans    &trans  &trans  &kp AT_SIGN      &kp SEMICOLON  &kp COLON  &kp ASTERISK  &trans
-                                              &trans          &trans     &trans  &trans    &trans  &trans  &trans           &trans
+&trans    &trans            &trans            &trans          &trans           &trans                    &trans  &trans           &trans         &trans     &trans        &trans
+&trans    &kp RG(C)         &kp LG(V)         &kp LG(X)       &kp ENTER        &trans                    &trans  &kp EXCLAMATION  &kp SQT        &kp GRAVE  &kp HASH      &kp QUESTION
+&sk LALT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &mt LS(TAB) TAB  &trans                    &trans  &kp DOLLAR       &kp PERIOD     &kp MINUS  &kp EQUAL     &kp COMMA
+&trans    &trans            &trans            &trans          &trans           &trans  &trans    &trans  &trans  &kp AT_SIGN      &kp SEMICOLON  &kp COLON  &kp ASTERISK  &trans
+                                              &trans          &trans           &trans  &trans    &trans  &trans  &trans           &trans
             >;
 
             label = "Char 2";
@@ -116,7 +168,7 @@
             bindings = <
 &trans  &trans         &trans        &trans       &trans         &trans                       &trans  &trans             &trans         &trans            &trans             &trans
 &trans  &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &kp END        &trans                       &trans  &trans             &kp LG(W)      &kp LC(LS(TAB))   &kp LC(TAB)        &trans
-&trans  &kp LEFT       &kp DOWN      &kp RIGHT    &kp HOME       &trans                       &trans  &kp TAB            &sk RSHFT      &sk LCTRL         &sk RIGHT_COMMAND  &sk RIGHT_ALT
+&trans  &kp LEFT       &kp DOWN      &kp RIGHT    &kp HOME       &trans                       &trans  &mt LS(TAB) TAB    &sk RSHFT      &sk LCTRL         &sk RIGHT_COMMAND  &sk RIGHT_ALT
 &trans  &trans         &trans        &trans       &trans         &trans     &trans    &trans  &trans  &kp LC(LG(ENTER))  &kp LC(LA(R))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans
                                      &mo 4        &kp BACKSPACE  &kp LC(D)  &trans    &trans  &trans  &trans             &trans
             >;
@@ -138,11 +190,11 @@
 
         Media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans      &trans             &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp C_PREV  &kp C_PP           &kp C_NEXT       &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans             &trans           &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &trans        &kp C_PREV    &kp C_PP           &kp C_NEXT       &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &trans        &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans        &trans             &trans           &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans
             >;
         };
     };
