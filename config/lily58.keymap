@@ -150,11 +150,11 @@
 
         layer_6 {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans     &trans  &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
-&kp Q       &kp W   &kp F   &kp P      &kp B   &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
-&kp A       &kp R   &kp S   &kp T      &kp G   &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
-&kp Z       &kp X   &kp C   &kp D      &kp V   &trans     &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &mkp LCLK  &mo 7   &mkp RCLK  &kp LEFT_CONTROL    &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q       &kp W   &kp F   &kp P   &kp B   &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&kp A       &kp R   &kp S   &kp T   &kp G   &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z       &kp X   &kp C   &kp D   &kp V   &trans     &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                            &mo 8   &mo 7   &mkp RCLK  &kp LEFT_CONTROL    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -165,6 +165,16 @@
 &kp N5  &kp N6  &kp N7  &kp N8        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp N9  &kp N0  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans                &trans    &trans     &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp NON_US_BACKSLASH  &kp Y     &kp U      &kp L   &kp J   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp O                 &kp I     &kp E      &kp N   &kp M   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp DOT               &kp SEMI  &kp COMMA  &kp H   &kp K   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
