@@ -148,7 +148,7 @@
             >;
         };
 
-        layer_6 {
+        LoL {
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans  &trans  &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
 &kp Q       &kp W   &kp F   &kp P   &kp B   &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
@@ -158,7 +158,7 @@
             >;
         };
 
-        layer_7 {
+        LoL-Num {
             bindings = <
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp N1  &kp N2  &kp N3  &kp NUMBER_4  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -168,7 +168,7 @@
             >;
         };
 
-        layer_8 {
+        LoL-Keys {
             bindings = <
 &trans                &trans    &trans     &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp NON_US_BACKSLASH  &kp Y     &kp U      &kp L   &kp J   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
