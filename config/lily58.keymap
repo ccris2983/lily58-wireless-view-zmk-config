@@ -87,7 +87,7 @@
 &kp LS(LG(NUMBER_4))  &kp LC(LS(TAB))   &kp LC(TAB)       &kp LG(W)       &trans   &trans                    &trans  &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp GRAVE
 &sk LEFT_ALT          &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk TAB  &trans                    &trans  &kp DOLLAR   &kp LBKT              &kp RBKT               &kp SLASH      &kp AMPERSAND
 &trans                &trans            &trans            &trans          &trans   &trans  &trans    &trans  &trans  &kp CARET    &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE       &trans
-                                                          &trans          &trans   &trans  &trans    &trans  &mo 9   &trans       &trans
+                                                          &trans          &trans   &trans  &trans    &trans  &mo 9   &tog 9       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
