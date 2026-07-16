@@ -178,7 +178,7 @@
             >;
         };
 
-        Mouse-Movemeng {
+        Mouse-Movement {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans
