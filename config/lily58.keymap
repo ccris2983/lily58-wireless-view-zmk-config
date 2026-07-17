@@ -100,10 +100,10 @@
 
         Special-Char-2 {
             bindings = <
-&trans    &trans            &trans            &trans          &trans           &trans                    &trans  &trans             &trans         &trans     &trans        &trans
-&trans    &kp RG(C)         &kp LG(V)         &kp LG(X)       &kp ENTER        &trans                    &trans  &kp DOUBLE_QUOTES  &kp SQT        &kp GRAVE  &kp HASH      &kp QUESTION
-&sk LALT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &mt LS(TAB) TAB  &trans                    &trans  &kp AT_SIGN        &kp PERIOD     &kp MINUS  &kp EQUAL     &kp COMMA
-&trans    &trans            &trans            &trans          &trans           &trans  &trans    &trans  &trans  &kp EXCLAMATION    &kp SEMICOLON  &kp COLON  &kp ASTERISK  &trans
+&trans    &trans            &trans            &trans          &trans           &trans                    &trans  &trans             &trans         &trans        &trans     &trans
+&trans    &kp RG(C)         &kp LG(V)         &kp LG(X)       &kp ENTER        &trans                    &trans  &kp DOUBLE_QUOTES  &kp SQT        &kp GRAVE     &kp HASH   &kp QUESTION
+&sk LALT  &sk LEFT_COMMAND  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &mt LS(TAB) TAB  &trans                    &trans  &kp AT_SIGN        &kp PERIOD     &kp MINUS     &kp EQUAL  &kp COMMA
+&trans    &trans            &trans            &trans          &trans           &trans  &trans    &trans  &trans  &kp EXCLAMATION    &kp SEMICOLON  &kp ASTERISK  &kp COLON  &trans
                                               &trans          &trans           &trans  &trans    &trans  &mo 5   &trans             &trans
             >;
 
