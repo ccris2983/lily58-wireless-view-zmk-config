@@ -195,8 +195,8 @@
         Mouse-Movement {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &trans          &mmv MOVE_UP    &trans           &msc SCRL_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &trans          &msc SCRL_DOWN  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans          &trans          &trans           &trans
                         &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans
             >;
