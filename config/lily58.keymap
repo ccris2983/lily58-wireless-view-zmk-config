@@ -67,11 +67,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC  &none  &none  &none  &none      &tog 6                     &none  &none      &none  &none      &none          &none
-&kp Q    &kp W  &kp F  &kp P  &kp B      &none                      &none  &kp J      &kp L  &kp U      &kp Y          &kp ESCAPE
-&kp A    &kp R  &kp S  &kp T  &kp G      &none                      &none  &kp M      &kp N  &kp E      &kp I          &kp O
-&kp Z    &kp X  &kp C  &kp D  &kp V      &none   &none     &none    &none  &kp K      &kp H  &kp COMMA  &kp SEMICOLON  &kp PERIOD
-                       &mo 1  &kp SPACE  &mo 2   &tog 9    &tog 10  &mo 3  &kp ENTER  &mo 4
+&kp ESC  &none  &none  &none  &none      &tog 6                     &tog 11  &none      &none  &none      &none          &none
+&kp Q    &kp W  &kp F  &kp P  &kp B      &none                      &none    &kp J      &kp L  &kp U      &kp Y          &kp ESCAPE
+&kp A    &kp R  &kp S  &kp T  &kp G      &none                      &none    &kp M      &kp N  &kp E      &kp I          &kp O
+&kp Z    &kp X  &kp C  &kp D  &kp V      &none   &none     &none    &none    &kp K      &kp H  &kp COMMA  &kp SEMICOLON  &kp PERIOD
+                       &mo 1  &kp SPACE  &mo 2   &tog 9    &tog 10  &mo 3    &kp ENTER  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -199,6 +199,36 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans     &trans  &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_LEFT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans           &trans          &trans
                         &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp Y           &kp Q   &kp W   &kp E   &kp T   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp S   &kp A   &kp D   &kp F   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp H           &kp Z   &kp X   &kp C   &kp V   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &mo 13  &mo 12  &kp SPACE  &kp LCTRL    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans        &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N6  &kp N7  &kp LEFT_ALT  &kp N8  &kp N9  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1  &kp N2  &kp N3        &kp N4  &kp N5  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N0  &trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_13 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp J   &kp L   &kp Y   &kp U   &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp M   &kp N   &kp E   &kp I   &kp O   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp K   &kp H   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
