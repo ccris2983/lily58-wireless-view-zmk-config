@@ -204,11 +204,11 @@
 
         layer_11 {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp Q   &kp W   &kp E   &kp T   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp S   &kp A   &kp D   &kp F   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp H           &kp Z   &kp X   &kp C   &kp V   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &mo 13  &mo 12  &kp SPACE  &kp LCTRL    &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp Q   &kp W   &kp E   &kp T   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp S   &kp A   &kp D   &kp F   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp H           &kp Z   &kp X   &kp C   &kp V   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &mo 13  &mo 12  &kp SPACE  &kp NUMBER_0    &trans  &trans  &trans  &trans
             >;
         };
 
