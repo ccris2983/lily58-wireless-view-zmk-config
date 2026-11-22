@@ -204,21 +204,21 @@
 
         layer_11 {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB         &kp Q   &kp W   &kp E   &kp T   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp S   &kp A   &kp D   &kp F   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp H           &kp Z   &kp X   &kp C   &kp V   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &mo 13  &mo 12  &kp SPACE  &kp NUMBER_0    &trans  &trans  &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q   &kp W   &kp E   &kp R   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D   &kp F   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&sk LEFT_CONTROL  &kp Z   &kp X   &kp C   &kp V   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &mo 13  &mo 12  &kp SPACE  &kp MINUS    &none   &trans  &trans  &trans
             >;
         };
 
         layer_12 {
             bindings = <
-&trans  &trans  &trans        &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N6  &kp N7  &kp LEFT_ALT  &kp N8  &kp N9  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N1  &kp N2  &kp N3        &kp N4  &kp N5  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N0  &trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
