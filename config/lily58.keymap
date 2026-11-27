@@ -204,31 +204,21 @@
 
         layer_11 {
             bindings = <
-&trans            &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D   &kp F   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&sk LEFT_CONTROL  &kp Z   &kp X   &kp C   &kp V   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                  &mo 13  &mo 12  &kp SPACE  &kp MINUS    &none   &trans  &trans  &trans
+&trans            &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q            &kp W        &kp E     &kp R         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A            &kp S        &kp D     &kp F         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&sk LEFT_CONTROL  &kp Z            &kp X        &kp C     &kp V         &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                &mo 12    &kp LEFT_ALT  &kp SPACE  &kp MINUS    &none   &trans  &trans  &trans
             >;
         };
 
         layer_12 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N5  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp J   &kp L   &kp Y   &kp U   &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp M   &kp N   &kp E   &kp I   &kp O   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp K   &kp H   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans           &trans        &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N5           &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
