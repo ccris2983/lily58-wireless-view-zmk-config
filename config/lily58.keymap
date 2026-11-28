@@ -204,11 +204,11 @@
 
         layer_11 {
             bindings = <
-&trans            &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q            &kp W        &kp E     &kp R         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &kp A            &kp S        &kp D     &kp F         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&sk LEFT_CONTROL  &kp Z            &kp X        &kp C     &kp V         &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                &mo 12    &kp LEFT_ALT  &kp SPACE  &kp MINUS    &none   &trans  &trans  &trans
+&trans            &kp T  &kp Y  &kp U   &kp I         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q  &kp W  &kp E   &kp R         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D   &kp F         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&sk LEFT_CONTROL  &kp Z  &kp X  &kp C   &kp V         &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &mo 12  &sk LEFT_ALT  &kp SPACE  &kp MINUS    &none   &trans  &trans  &trans
             >;
         };
 
